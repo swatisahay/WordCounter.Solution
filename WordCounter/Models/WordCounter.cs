@@ -21,6 +21,39 @@ namespace WordCounter
     {
       return _newString;
     }
+    public int CountWord()
+    {
+      int wordCounter=0;
 
+      if (_word!="")
+      {
+        string[] stringArray=_newString.Split(' ');
+        for(int i=0; i<stringArray.Length; i++)
+        {
+          if(_word.ToLower()==stringArray[i])
+          {
+            wordCounter++;
+          }
+        }
+
+      }
+        return wordCounter;
+    }
   }
+  public class Program
+  {
+    public static void Main()
+    {
+      Console.WriteLine("Please enter a word:");
+      string yourWord = Console.ReadLine();
+      Console.WriteLine("Enter your string");
+      string wordString = Console.ReadLine();
+
+      RepeatCounter newWord = new RepeatCounter(yourWord, wordString);
+
+      Console.WriteLine("RepeatCounter:" + newWord.CountWord());
+
+    }
+  }
+
 }
