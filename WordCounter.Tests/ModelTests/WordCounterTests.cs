@@ -130,6 +130,23 @@ namespace WordCounter.Tests
       Assert.AreEqual(3, counter);
       //it should h=give an error
     }
+    [TestMethod]
+    public void ToCheckWordsWithPunctuation_true()
+    {
+      //Arrange
+      string testWord = "Hello";
+      string testString= "hello; hello, hello.hello?hello:";
+      RepeatCounter newWord = new RepeatCounter(testWord, testString);
+
+
+      //Act
+      string results = newWord.GetWord();
+      string result1=newWord.GetString();
+      int counter=newWord.CountWord();
+      //Assert
+      Assert.AreEqual(5, counter);
+      //it should h=give an error
+    }
 
   }
 }
