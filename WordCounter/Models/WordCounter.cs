@@ -33,7 +33,7 @@ namespace WordCounter.Models
 
       if (_word!="")
       {
-        string[] stringArray=_newString.Split(' ',',',';','?','.',':');
+        string[] stringArray=_newString.Split(' ',',',';','?','.',':','"');
         for(int i=0; i<stringArray.Length; i++)
         {
           if(_word.ToLower()==stringArray[i])
