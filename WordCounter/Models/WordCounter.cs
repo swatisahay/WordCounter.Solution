@@ -40,20 +40,20 @@ namespace WordCounter
         return wordCounter;
     }
   }
-  public class Program
-  {
-    public static void Main()
-    {
-      Console.WriteLine("Please enter a word:");
-      string yourWord = Console.ReadLine();
-      Console.WriteLine("Enter your string");
-      string wordString = Console.ReadLine();
-
-      RepeatCounter newWord = new RepeatCounter(yourWord, wordString);
-
-      Console.WriteLine("RepeatCounter:" + newWord.CountWord());
-
-    }
-  }
+  // public class Program
+  // {
+  //   public static void Main()
+  //   {
+  //     Console.WriteLine("Please enter a word:");
+  //     string yourWord = Console.ReadLine();
+  //     Console.WriteLine("Enter your string");
+  //     string wordString = Console.ReadLine();
+  //
+  //     RepeatCounter newWord = new RepeatCounter(yourWord, wordString);
+  //
+  //     Console.WriteLine("RepeatCounter:" + newWord.CountWord());
+  //
+  //   }
+  // }
 
 }
