@@ -7,6 +7,7 @@ namespace WordCounter
   {
     private string _word;
     private string _newString;
+    private static List<RepeatCounter> newCounter = new List<RepeatCounter> {};
     public RepeatCounter(string word, string newString)
     {
       _word=word;
@@ -20,6 +21,10 @@ namespace WordCounter
     public string GetString()
     {
       return _newString;
+    }
+    public static List<RepeatCounter> GetAll()
+    {
+    return newCounter;
     }
     public int CountWord()
     {
