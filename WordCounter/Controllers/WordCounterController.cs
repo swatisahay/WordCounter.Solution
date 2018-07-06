@@ -25,18 +25,7 @@ namespace WordCounter.Controllers
       List<RepeatCounter> allWords = RepeatCounter.GetAll();
       return View("Index", allWords);
     }
-    // [HttpGet("/Places/{id}")]
-    // public ActionResult Details(int id)
-    // {
-    //   PlacesObject place = PlacesObject.Find(id);
-    //   return View(place);
-    // }
-    // [HttpPost("/Places/delete")]
-    // public ActionResult DeleteAll()
-    // {
-    //   PlacesObject.ClearAll();
-    //   return View();
-    // }
+
 
   }
 }
