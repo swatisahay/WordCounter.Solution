@@ -1,17 +1,18 @@
 using System;
 using System.Collections.Generic;
 
-namespace WordCounter
+namespace WordCounter.Models
 {
   public class RepeatCounter
   {
     private string _word;
     private string _newString;
-    private static List<RepeatCounter> newCounter = new List<RepeatCounter> {};
+    private static List<RepeatCounter> _instances = new List<RepeatCounter> {};
     public RepeatCounter(string word, string newString)
     {
       _word=word;
       _newString=newString;
+      _instances.Add(this);
 
     }
     public string GetWord()
@@ -24,7 +25,7 @@ namespace WordCounter
     }
     public static List<RepeatCounter> GetAll()
     {
-    return newCounter;
+      return _instances;
     }
     public int CountWord()
     {

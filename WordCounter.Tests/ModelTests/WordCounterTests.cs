@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCounter;
+using WordCounter.Models;
 using System;
 using System.Collections.Generic;
 

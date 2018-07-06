@@ -1,0 +1,16 @@
+<h1>WordCounter List</h1>
+<ul>
+  @foreach(var word in Model)
+  {
+   <li>
+    <p>Word: @word.GetWord()</p>
+    <p>Sentence: @word.GetString()</p>
+    <p>Word repetition in sentence: @word.CountWord() times</p>
+   </li>
+
+  }
+</ul>
+<a href="/RepeatCounter/new">Check another word</a>
+<!-- <form action="/Places/delete" method="post">
+  <button type="submit" name="button">Clear All Place</button>
+</form> -->
