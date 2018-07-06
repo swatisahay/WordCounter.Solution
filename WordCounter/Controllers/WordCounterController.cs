@@ -23,7 +23,7 @@ namespace WordCounter.Controllers
     {
       RepeatCounter newWord = new RepeatCounter(Request.Form["word"],Request.Form["sentence"]);
       List<RepeatCounter> allWords = RepeatCounter.GetAll();
-      return View("Index", allWords);
+      return RedirectToAction("Index");
     }
 
 

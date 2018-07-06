@@ -1,10 +1,46 @@
-<h1>Repeatcounter</h1>
-<form action="/Repeatcounter" method="post">
-  <label for="word">Enter your word</label>
-  <input id="word" name="word" type="text">
-  <label for="sentence">Enter your sentence</label>
-  <input id="sentence" name="sentence" type="text">
-  <div class="">
-    <button type="submit">submit</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Super Awesome Site!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <style media="screen">
+     h1
+     {
+       text-align: center;
+     }
+     body{
+       background-color: black;
+       color: blue;
+     }
+     .input{
+       text-align: center;
+     }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+
+
+    <h1>Repeatcounter</h1>
+    <div class="input">
+
+
+    <form action="/Repeatcounter" method="post">
+      <label for="word">Enter your word</label><br>
+      <input id="word" name="word" type="text"><br>
+      <label for="sentence">Enter your sentence</label><br>
+      <input id="sentence" name="sentence" type="text"><br>
+      <div class="">
+        <button type="submit"class="btn btn-primary">submit</button>
+      </div>
+      <div class="">
+        <p><a href='/'>Back to Main page<a/></p>
+      </div>
+
+    </form>
+    </div>
   </div>
-</form>
+  </body>
+</html>
